@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | VRDroneOperator</title>
+    <title>Unity WebGL Player | TestWeb</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">VRDroneOperator</div>
+        <div id="unity-build-title">TestWeb</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/DroneWeb.loader.js";
+      var loaderUrl = buildUrl + "/DroneWeb2.loader.js";
       var config = {
-        dataUrl: buildUrl + "/DroneWeb.data",
-        frameworkUrl: buildUrl + "/DroneWeb.framework.js",
-        codeUrl: buildUrl + "/DroneWeb.wasm",
+        dataUrl: buildUrl + "/DroneWeb2.data",
+        frameworkUrl: buildUrl + "/DroneWeb2.framework.js",
+        codeUrl: buildUrl + "/DroneWeb2.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "VRDSE",
-        productName: "VRDroneOperator",
-        productVersion: "1.6",
+        companyName: "DefaultCompany",
+        productName: "TestWeb",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -53,8 +53,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
       loadingBar.style.display = "block";
 
